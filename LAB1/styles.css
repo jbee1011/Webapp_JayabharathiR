@@ -1,0 +1,14 @@
+.container {
+    width: 400px;
+    padding: 50px;
+    margin: 20px;
+    border: 15px solid purple;
+    background-color: lightgray;
+    text-align: center;
+}
+h1 {
+    color: black;
+}
+p {
+    font-size: 16px;
+}   
