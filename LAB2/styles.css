@@ -1,0 +1,176 @@
+/* Flexbox Part 1 */
+#flex-section1 ul {
+    display: flex;
+    justify-content: space-around;  /* Distributes the space evenly between buttons */
+    list-style-type: none;           /* Removes default bullet points from list items */
+    padding: 0;
+    margin: 0;
+}
+
+#flex-section1 li {
+    margin: 0 10px;                  /* Adds margin between buttons */
+}
+
+#flex-section1 .btn {
+    display: inline-block;              /* Adds padding for better button size */       /* Button background color */
+    color: white;                    /* Button text color */
+    text-decoration: none;           /* Removes underline from links */
+    border-radius: 5px;              /* Rounds the corners */
+}
+
+
+
+
+
+/* Flexbox Part 2 */
+#flex-section2 ul {
+    display: flex;
+    justify-content: space-between;  /* Distributes the columns evenly */
+    flex-wrap: wrap;                 /* Ensures items will wrap into multiple lines if necessary */
+    list-style-type: none;           /* Removes default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+#flex-section2 li {
+    flex: 1;                         /* Each list item takes up equal width */       /* Gives a background color to each item */                     /* Adds space around the items */          /* Adds a border around the items */
+    box-sizing: border-box;          /* Ensures padding and borders are included in the element's width */
+}
+
+#flex-section2 .item1 {
+    order: 1;                        /* Displays item 1 first */
+}
+
+#flex-section2 .item2 {
+    order: 3;                        /* Displays item 2 as the third column */
+}
+
+#flex-section2 .item3 {
+    order: 2;                        /* Displays item 3 as the second column */
+}
+
+
+/* end Flexbox Part 2 */
+
+/* Flexbox Part 3 */
+
+#flex-section3 .box {
+    display: flex;
+    justify-content: center;          /* Centers the card horizontally */
+    align-items: center;              /* Centers the card vertically */
+
+	                     /* Ensures the box takes full height of the container */
+}
+
+/* Flexbox for tags */
+#flex-section3 .tags ul {
+    display: flex;
+    justify-content: left;          /* Centers the tags horizontally */
+    flex-wrap: wrap;                  /* Allows tags to wrap to a new line if necessary */                        /* Adds space between the tags */
+    list-style-type: none;            /* Removes default bullet points */
+    padding: 0;
+    margin: 10px 0 0 0;
+	height: 100%;
+}
+
+
+
+
+/* end Flexbox Part 3 */
+
+
+/* Grid Part 1 */
+
+#grid-section1 .grid {
+    display: grid;                         /* Enables grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal-width columns */
+    grid-auto-rows: 100px;                 /* Automatically sets each row to be 100px tall */
+    gap: 20px; 
+	                            /* Adds 20px space between the rows and columns */
+}
+
+/* end Grid Part 1 */
+
+
+/* Grid Part 2 */
+
+#grid-section2 .gridboxblue {
+                /* Blue box background color */
+    grid-column: 2 / 4;                    /* Spans from column 2 to column 4 */
+    grid-row: 1 / 4;                      /* Spans from row 1 to row 3 */
+    z-index: 2;                            /* Ensures blue box is layered on top of the red box */
+    color: white;                          /* White text color for contrast */
+    display: flex;                         /* Flexbox for centering content */
+}
+
+#grid-section2 .gridboxred {
+                /* Red box background color */
+    grid-column: 1 / 3;                    /* Spans from column 1 to column 3 */
+    grid-row: 2 / 3;                       /* Spans from row 2 to row 4 */
+    z-index: 1;                            /* Ensures red box is behind the blue box */
+    color: white;                          /* White text color for contrast */
+    display: flex;                         /* Flexbox for centering content */
+
+}
+
+/* end Grid Part 2 */
+
+
+/* Grid Part 3 */
+
+#grid-section3 .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;         /* First column is twice as wide as the second column */
+    grid-template-rows: 100px 300px 100px;  /* First and last rows are 100px, middle row is 300px */
+    gap: 10px;                              /* Adds a 10px gap between all rows and columns */
+}
+
+#grid-section3 .box1 {
+    grid-column: 1 / 3;                     /* Box spans both columns (1st row) */
+    grid-row: 1 / 2;                        /* Places the box in the first row */
+    display: flex;
+}
+
+#grid-section3 .box2 {
+    grid-column: 1 / 2;                     /* Box occupies the first column (middle row) */
+    grid-row: 2 / 3;                        /* Places the box in the second row */
+    display: flex;
+
+   
+}
+
+#grid-section3 .box3 {
+    grid-column: 2 / 3;                     /* Box occupies the second column (middle row) */
+    grid-row: 2 / 3;                        /* Places the box in the second row */
+    display: flex;
+}
+
+#grid-section3 .box4 {
+    grid-column: 1 / 3;                     /* Box spans both columns (3rd row) */
+    grid-row: 3 / 4;                        /* Places the box in the last row */
+    display: flex;
+ 
+}
+
+/* end Grid Part 3 */
+
+
+/* Transition Part */
+
+#transition-section .box a {
+    display: inline-block;
+    background-color: #ccc;         /* Initial background color */
+    color: #000;                    /* Initial text color */
+    padding: 20px;                  /* Adds padding around the link */
+    text-decoration: none;  
+	transition: background-color 3s ease, color 3s ease;        /* Removes underline from the link */
+     /* 0.5s transition on hover */
+}
+
+#transition-section .box a:hover {
+    background-color: #cc0000;      /* Changes background color on hover */
+    color: #fff;                    /* Changes text color on hover */
+	transition: background-color 0.5s ease, color 0.5s ease;/* 3s transition when hover ends */
+}
+
+/* end Transition Part */
